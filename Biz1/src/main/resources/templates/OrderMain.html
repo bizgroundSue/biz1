@@ -5,8 +5,25 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1> 카페 이름 </h1>
+<hr>
+<form action="order" method="post">
+	<input type="checkbox" name="menu_name" value="IceAmericano"> 아메리카노 
+	<input type="number" name="quantities">  <br>
+	
+	<input type="hidden" name="cafe_id" value="cafe1">
+	<input type="hidden" name="user_id" value="user1">
+	<input type="submit" value="주문하기">
+</form>
 
-<button> 주문하기 </button>
+<!-- <button> 주문하기 </button>
+
+<script type="text/javascript">
+	const orderBtn = document.querySelector('body button');
+	orderBtn.addEventListener('click', ()=>{
+		document.location.href="http://localhost:8095/Biz/order"
+	})
+</script> -->
 
 </body>
 </html>
