@@ -5,14 +5,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> 카페 이름 </h1>
+<h1> 메뉴선택 </h1>
 <hr>
-<form action="order" method="post">
-	<input type="checkbox" name="menu_name" value="IceAmericano"> 아메리카노 
-	<input type="number" name="quantities">  <br>
+<form action="menuChoice" method="get">
+	<input type="radio" name="menu_name" value="Americano"> 아메리카노
+	<input type="radio" name="menu_name" value="latte"> 카페라떼  
 	
-	<input type="hidden" name="cafe_id" value="cafe1">
-	<input type="hidden" name="user_id" value="user1">
+	<input type="hidden" name="user_id" value="user1"> <!--  로그인되어있다라는 가정 -->
 	<input type="submit" value="주문하기">
 </form>
 

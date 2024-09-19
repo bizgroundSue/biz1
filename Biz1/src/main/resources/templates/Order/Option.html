@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1> 옵션 선택 </h1>
+
+<form action="order" value="get">
+	<input type="number" name="quantities">
+	<hr>
+	<input type="radio" name="hi" value="Hot"> Hot
+	<input type="radio" name="hi" value="Ice"> Ice
+	<hr>
+	<input type="radio" name="size" value="Tall"> Tall
+	<input type="radio" name="size" value="Grande"> Grande
+	<input type="radio" name="size" value="Venti"> Venti
+	<hr>
+	<input type="radio" name="ice" value="0"> 없이
+	<input type="radio" name="ice" value="40"> 적게
+	<input type="radio" name="ice" value="60"> 보통
+	<input type="radio" name="ice" value="100"> 많이
+	
+	<input type="hidden" name="menu_name" th:text="${param.menu_name}">
+	<input type="submit" value="주문하기">
+</form>
+
+</body>
+</html>
